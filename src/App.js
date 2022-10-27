@@ -2,9 +2,6 @@ import Sidebar from './Sidebar';
 import Chat from './Chat';
 import Login from './Login'
 import './App.css';
-import { useState } from 'react';
-// import Pusher from 'pusher-js';
-// import axios from './Axios'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useStateValue } from './StateProvider';
 
@@ -12,10 +9,6 @@ import { useStateValue } from './StateProvider';
 function App() {
 
   const [{user},dispatch]=useStateValue();
-
-  
-
-
 
   return (
     <div className="app">
